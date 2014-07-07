@@ -12,7 +12,7 @@
         <link rel="shortcut icon" href="img/favicon.ico">
 
         <!-- Style -->
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/login.css">
 
         <!-- Modernizr -->
         <script src="lib/js/modernizr.js"></script>
@@ -20,49 +20,31 @@
     </head>
     <body class="login-page">
 
-        <main >
+        <div id="login-form">
 
-            <div class="content-box-center">
+            <h3>Login</h3>
 
-                <div class="col-sm-12">
+            <fieldset>
 
-                    <h1 class="login-logo">EasyDocs</h1>
+                <form action="javascript:void(0);" method="get">
 
-                    <div class="panel panel-default">
+                    <input type="email" required value="Email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' "> <!-- JS because of IE support; better: placeholder="Email" -->
 
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Área de Administração</h3>
-                        </div>
-                        <div class="panel-body">
+                    <input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> <!-- JS because of IE support; better: placeholder="Password" -->
 
-                            <div class="form-group">
-                                <label for="user_op"><i class="fa fa-user"></i> Usuário</label>
-                                <input type="email" class="form-control" id="user_op" placeholder="Digite o seu e-mail">
-                            </div>
+                    <input type="submit" value="Login">
 
-                            <div class="form-group">
-                                <label for="user_op"><i class="fa fa-lock"></i> Senha</label>
-                                <input type="password" class="form-control" id="user_op" placeholder="Digite sua senha">
-                            </div>
+                    <footer class="clearfix">
 
-                            <button type="button" class="btn btn-default panel-btn">Entrar</button>
+                        <p><span class="info">?</span><a href="#">Forgot Password</a></p>
 
-                            <div class="input-group">
-                                <div class="checkbox">
-                                    <label><input id="login-remember" type="checkbox" name="remember" value="1"> Lembrar senha</label>
-                                </div>
-                                <a class="forgot-pass" href="#">Esqueceu sua senha?</a>
-                            </div>                            
+                    </footer>
 
-                        </div>
-                    </div>
-                </div>
+                </form>
 
-            </div>
+            </fieldset>
 
-        </main>
-        
-        <script src="js/main.min.js"></script>
+        </div> <!-- end login-form -->
 
     </body>
 </html>
