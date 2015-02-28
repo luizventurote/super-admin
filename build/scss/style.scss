@@ -211,6 +211,7 @@ main {
 }
 
 .page {
+    width: 100%;
     min-height: 100%;
     position: absolute;
     z-index: 1;
@@ -487,6 +488,10 @@ h6 {
         max-height: 30px;
         white-space: pre;
     }
+
+    &.logo-footer {
+        color: #333;
+    }
 }
 
 // Menu
@@ -568,12 +573,6 @@ h6 {
             color: #fff;
             text-shadow: 0 1px 1px #000;
             background: #777;
-
-            &:before {
-                content: "»";
-                padding-right: 5px;
-                vertical-align: 1px;
-            }
 
             &:hover {
                 padding-left: 20px;
@@ -697,6 +696,7 @@ h6 {
 
     // Page
     .page {
+        width: 100%;
         @include Translate(0);
         display: table;
 

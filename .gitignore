@@ -2,6 +2,7 @@
 node_modules/**/* 
 node_modules/
 cache-style.css
+cache-style.css.map
 
 # OS generated files #
 ######################
